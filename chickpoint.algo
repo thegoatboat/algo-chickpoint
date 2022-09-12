@@ -1,0 +1,31 @@
+ALGORITHM 
+VAR
+    var str = STRING
+    var sum = number; sum=1;
+    var long= str.lenght;
+    var i=integer;
+    var z=integer;
+    var sumV=integer;
+
+BEGIN
+long=str.lenght;
+i=1;
+WHILE (str[i]<>".") DO
+    read str
+    IF (str=" ") THEN
+        sum=sum +1;
+        i=i+1;
+    END_IF
+END_WHILE
+sumV=0;
+FOR i FROM 1 TO str.lenght STEP 1  DO
+    IF (str[i] in [a,e,i,o,u,y]) THEN
+        sumV=sumV+1;
+    END_IF
+END_FOR
+
+whrit(long ,"longeur phrase")
+whrite(sum ,"nombres de mots")
+whrite(sumV ,"nombres des voleils")
+
+END
